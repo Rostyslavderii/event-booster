@@ -1,0 +1,32 @@
+.select__form {
+  position: relative;
+}
+
+.select-country-btn {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translate(-120%, -50%);
+
+  height: 100%;
+  width: 50px;
+}
+
+.country_list {
+  position: absolute;
+  width: 100%;
+  height: 800%;
+  padding-left: 30px;
+  padding-top: 10px;
+  overflow-y: scroll;
+
+  color: white;
+  background-color: $secondary-text-color;
+  border: solid 2px $accent-color;
+}
+
+.ru {
+  color: red;
+  font-size: 55px;
+  text-align: center;
+}
