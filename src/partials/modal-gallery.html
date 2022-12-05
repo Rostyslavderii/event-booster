@@ -1,0 +1,94 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-button" type="button">
+      <svg class="modal-button__icon" width="17" height="17">
+        <use
+          class="modal-button__icon--close"
+          href="./images/sprite.svg#icon-Close"
+        ></use>
+      </svg>
+    </button>
+    <div class="modal__wrap">
+      <img
+        class="modal__preview"
+        srcset="
+          ./images/img-modal/img-small-mb.jpg  102w,
+          ./images/img-modal/img-small-tab.jpg  70w,
+          ./images/img-modal/img-small-lg.jpg  132w
+        "
+        sizes="(min-width: 768px) 132px, (min-width: 767px) 70px, 100vw"
+        src="./images/img-modal/img-small-mb.jpg"
+        alt="preview-poster"
+        width="102"
+        height="102"
+      />
+
+      <div class="content">
+        <img
+          class="content__image"
+          srcset="
+            ./images/img-modal/img-big-tab.jpg 249w,
+            ./images/img-modal/img-big-lg.jpg  427w
+          "
+          sizes="(min-width: 1280px) 427wx, (min-width: 768px) 249px, 100vw"
+          src="./images/img-modal/img-big-tab.jpg"
+          alt="poster"
+          width="249"
+          height="664"
+        />
+
+        <ul class="content__list">
+          <li class="content__item">
+            <h2 class="modal__title">INFO</h2>
+            <p class="modal__text text-wrap">
+              Atlas Weekend is the largest music festival in Ukraine. More than
+              200 artists will create a proper music festival atmosphere on 10
+              stages
+            </p>
+          </li>
+          <li class="content__item">
+            <h2 class="modal__title">WHEN</h2>
+            <p class="modal__text">2021-06-09</p>
+            <p class="modal__text">20:00 (Kyiv/Ukraine)</p>
+          </li>
+          <li class="content__item">
+            <h2 class="modal__title">WHERE</h2>
+            <p class="modal__text">Kyiv, Ukraine</p>
+            <p class="modal__text">VDNH</p>
+          </li>
+          <li class="content__item">
+            <h2 class="modal__title">WHO</h2>
+            <p class="modal__text">The Black Eyed Peas</p>
+          </li>
+          <li class="content__item">
+            <h2 class="modal__title">PRICES</h2>
+
+            <ul class="price__list">
+              <li class="price__item">
+                <div class="price__wrap">
+                  <svg width="24" height="16">
+                    <use href="./images/sprite.svg#Ticket"></use>
+                  </svg>
+                  <p class="modal__text">Standart 300-500 UAH</p>
+                </div>
+                <a class="list modal__btn" href="">BUY TICKETS</a>
+              </li>
+              <li class="price__item">
+                <div class="price__wrap">
+                  <svg width="24" height="16">
+                    <use href="./images/sprite.svg#Ticket"></use>
+                  </svg>
+                  <p class="modal__text">VIP 1000-1500 UAH</p>
+                </div>
+                <a class="list modal__btn" href="">BUY TICKETS</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="btn__wrap">
+        <a class="list modal__btn" href="#">MORE FROM THIS AUTHOR</a>
+      </div>
+    </div>
+  </div>
+</div>
