@@ -1,0 +1,37 @@
+body {
+	background-color: $primary-bg-color;
+
+	@include bp(tab) {
+		background-image: url('../images/bg_img/bg_img_black/bgTab.jpg');
+	}
+
+	@include bp(desk) {
+		background-image: url('../images/bg_img/bg_img_black/BGdesk.jpg');
+	}
+}
+
+
+// .gallery-section {
+//   background-color: $primary-bg-color;
+// }
+// hidden text h2 for validator
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+// .portfolio-team:not(:nth-last-child(-n+4)) {
+//   margin-bottom: 30px;
+// }
+// .portfolio-team:not(:nth-child(4n)) {
+//   margin-right: 30px;
+// }
