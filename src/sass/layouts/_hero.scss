@@ -1,0 +1,117 @@
+.hero {
+    padding-top: 78px;
+    padding-bottom: 10px;
+    background-image: url(../images/bg_img/bg_img_tablet.jpg);
+    height: 446px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 480px) {
+    background-image: url(../images/bg_img/bg_img_tablet.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 81px;
+      background-image: url(../images/bg_img/bg_img_desktop.jpg);
+    }
+  
+    @media screen and (min-width: 1280px) {
+      height: 446px;
+      padding-top: 40px;
+      padding-bottom: 90px;
+      background-image: url(../images/bg_img/bg_img_desktop.jpg);
+    }
+  }
+  .hero__title {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #dc56c5;
+  
+    @media screen and (min-width: 768px) {
+      font-size: 29px;
+      width: 353px;
+      margin-bottom: 27px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+      font-size: 50px;
+      width: 600px;
+      margin-bottom: 52px;
+    }
+  }
+
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .search__element {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(80px);
+      height: 40px;
+      width: 270px;
+      border: none;
+      border-radius: 20px;
+      padding-left: 30px;
+      color: white;
+      &::placeholder {
+        color: white;
+      }
+    }
+    .select__field:hover {
+    cursor: pointer;
+      }
+    .search__form,
+    .select__form {
+      margin-bottom: 25px;
+  
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+    .search__form,
+    .select__form  {
+    position: relative;
+    z-index: 99;
+    height: 30px;
+    width: 270px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+    .select__choose-country {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+    .search__svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    fill: #fff;
+}
+    select {
+    appearance: none;
+}
+
+    .select__label {
+    position: absolute;
+    top: 11px;
+    left: 230px;
+    pointer-events: none;
+}
+
