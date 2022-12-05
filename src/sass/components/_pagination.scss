@@ -1,0 +1,27 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	margin: 60px 0 0;
+}
+
+.pagination__page {
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: $primary-text-color;
+	font-size: $mob-primary-font-size;
+
+	@include bp(tab) {
+		font-size: $primary-font-size;
+	}
+}
+
+.current-page {
+	color: $accent-color;
+	border: 1px solid $accent-color;
+	border-radius: 10px 0px;
+}
