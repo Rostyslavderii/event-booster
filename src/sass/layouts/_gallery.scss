@@ -1,0 +1,84 @@
+body {
+	background-color: $primary-bg-color;
+
+
+	@include bp(tab) {
+		background-image: url('../images/bg_img/bg_img_black/bgTab.jpg');
+	}
+
+	@include bp(desk) {
+		background-image: url('../images/bg_img/bg_img_black/BGdesk.jpg');
+	}
+}
+
+.gallery__list li {
+	opacity: 0;
+	transform: scale(1.1);
+	animation-name: increase;
+	animation-duration: 3000ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+	0% {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 0.1;
+	}
+
+	20% {
+		opacity: 0.2;
+
+	}
+
+	30% {
+		opacity: 0.3;
+
+	}
+
+	40% {
+		opacity: 0.4;
+
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	60% {
+		opacity: 0.6;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	80% {
+		opacity: 0.8;
+	}
+
+	90% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.gallery__div {
+	transition: transform 250ms linear;
+}
+
+// .gallery__list li:nth-child(n+2) .gallery__div:hover {
+// 	transform: perspective(400px) rotateY(-20deg);
+// }
+
+.gallery__div:hover,
+.gallery__div:focus {
+	transform: perspective(400px) rotateY(-20deg);
+}

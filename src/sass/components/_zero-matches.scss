@@ -1,0 +1,37 @@
+.zero-matches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.zero-matches{
+    &__text{
+        text-align: center;
+        color: $accent-color;
+        font-weight: 700;
+        @include bp(mob) {
+            font-size: 16px;
+		}
+        @include bp(tab) {
+            font-size: 24px;
+		}
+        @include bp(desk){
+            font-size: 32px;
+        }
+    }
+
+    &__img{
+        width: 200px;
+        height: auto;
+        @include bp(mob) {
+            width: 200px;
+		}
+        @include bp(tab) {
+            width: 300px;
+		}
+        @include bp(desk){
+            width: 400px;
+        }   
+    }
+}
